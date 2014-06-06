@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{488A03E1-3579-4252-B889-AECDF896850A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarofferWebApp</RootNamespace>
+    <AssemblyName>CarofferWebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\AjaxControlToolkit.Binary.NET35\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json.Net20">
+      <HintPath>C:\Users\ramin\Documents\Visual Studio 2010\Projects\PushTestFinal2\PushTestFinal2\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\CarofferWebApp.dll" />
+    <Content Include="bin\CarofferWebApp.pdb" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\HtmlAgilityPack.dll" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\LICENSE.txt" />
+    <Content Include="bin\Microsoft.WindowsAzure.Configuration.dll" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ReadMe.html" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="CarofferForms\Admin.aspx" />
+    <Content Include="CarofferForms\AppraisalForm.aspx" />
+    <Content Include="CarofferForms\CarOffers.aspx" />
+    <Content Include="CarofferForms\Index.aspx" />
+    <Content Include="CarofferForms\Summary.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrapss.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\elastislide.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\ie.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style4.css" />
+    <Content Include="fonts\dinpro-medium_0-webfont.svg" />
+    <Content Include="fonts\gotham-rounded-light-webfont.svg" />
+    <Content Include="fonts\gotham-rounded-medium_0-webfont.svg" />
+    <Content Include="fonts\proximanova-bold-webfont-webfont.svg" />
+    <Content Include="fonts\proximanova-regularitalic_1-webfont.svg" />
+    <Content Include="fonts\proximanova-regular_1-webfont.svg" />
+    <Content Include="fonts\pt_serif-web-regular-webfont.svg" />
+    <Content Include="header_footer.html" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\1.png" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\2.png" />
+    <Content Include="images\25 copy.png" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\3.png" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\4.png" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\5.png" />
+    <Content Include="images\acordian-hbg.png" />
+    <Content Include="images\ad-bg.png" />
+    <Content Include="images\arrow-little.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\arw.png" />
+    <Content Include="images\arw2.png" />
+    <Content Include="images\bar1.png" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\border.png" />
+    <Content Include="images\Brazil-citybeach.png" />
+    <Content Include="images\button.png" />
+    <Content Include="images\calender-left-arrow.png" />
+    <Content Include="images\calender-right-arrow.png" />
+    <Content Include="images\call.png" />
+    <Content Include="images\camera.jpg" />
+    <Content Include="images\cameranewone.jpg" />
+    <Content Include="images\car.jpg" />
+    <Content Include="images\car.png" />
+    <Content Include="images\caradd.png" />
+    <Content Include="images\Carat-Progresso-side_tcm2005-112215.png" />
+    <Content Include="images\card.png" />
+    <Content Include="images\clander.png" />
+    <Content Include="images\close copy.png" />
+    <Content Include="images\comas.png" />
+    <Content Include="images\crosal-left.png" />
+    <Content Include="images\crosal-next.png" />
+    <Content Include="images\crosal-prev.png" />
+    <Content Include="images\crosal-right.png" />
+    <Content Include="images\d-button.png" />
+    <Content Include="images\d-buttonup.png" />
+    <Content Include="images\down-arrow.png" />
+    <Content Include="images\drop-btn.png" />
+    <Content Include="images\errow.png" />
+    <Content Include="images\facebook-icon.png" />
+    <Content Include="images\favicon.jpg" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\fcility_bg.png" />
+    <Content Include="images\fcility_tick.png" />
+    <Content Include="images\flight.png" />
+    <Content Include="images\get.png" />
+    <Content Include="images\glyphicons-halflings-white.png" />
+    <Content Include="images\glyphicons-halflings.png" />
+    <Content Include="images\google.png" />
+    <Content Include="images\gotop.png" />
+    <Content Include="images\grid_btn.png" />
+    <Content Include="images\grid_btn_hover.png" />
+    <Content Include="images\Header-bg.png" />
+    <Content Include="images\header-border.png" />
+    <Content Include="images\Headertop-bg.png" />
+    <Content Include="images\Heading-border.png" />
+    <Content Include="images\hotdeal-pic.png" />
+    <Content Include="images\hotel.png" />
+    <Content Include="images\Images\12 copy.png" />
+    <Content Include="images\Images\13 copy.png" />
+    <Content Include="images\Images\15 copy.png" />
+    <Content Include="images\Images\16 copy.png" />
+    <Content Include="images\Images\17 copy.png" />
+    <Content Include="images\Images\19 copy.png" />
+    <Content Include="images\Images\25 copy.png" />
+    <Content Include="images\Images\28 copy.png" />
+    <Content Include="images\Images\29.png" />
+    <Content Include="images\Images\6 1copy.png" />
+    <Content Include="images\Images\camera.jpg" />
+    <Content Include="images\Images\camera2.png" />
+    <Content Include="images\Images\Canon-XH-A1.png" />
+    <Content Include="images\Images\condition.png" />
+    <Content Include="images\Images\condmap_back.jpg" />
+    <Content Include="images\Images\condmap_front.jpg" />
+    <Content Include="images\Images\h.png" />
+    <Content Include="images\Images\1.jpg" />
+    <Content Include="images\Images\11 copy.png" />
+    <Content Include="images\Images\2.jpg" />
+    <Content Include="images\Images\24 copy.png" />
+    <Content Include="images\Images\4 copy.png" />
+    <Content Include="images\Images\5 copy.png" />
+    <Content Include="images\Images\7 copy.png" />
+    <Content Include="images\Images\8 copy.png" />
+    <Content Include="images\Images\close copy.png" />
+    <Content Include="images\Images\images %281%29.jpg" />
+    <Content Include="images\Images\images %282%29.jpg" />
+    <Content Include="images\Images\images.jpg" />
+    <Content Include="images\Images\interior.png" />
+    <Content Include="images\Images\Mechanic.png" />
+    <Content Include="images\Images\submit.png" />
+    <Content Include="images\Images\upload.png" />
+    <Content Include="images\Images\vehiclecondition.png" />
+    <Content Include="images\Images\vs.png" />
+    <Content Include="images\Images\3.jpg" />
+    <Content Include="images\Images\4.jpg" />
+    <Content Include="images\Images\5.jpg" />
+    <Content Include="images\Images\yourcomments.png" />
+    <Content Include="images\input0bg.png" />
+    <Content Include="images\input_bg.png" />
+    <Content Include="images\left-small-errow.png" />
+    <Content Include="images\left.png" />
+    <Content Include="images\left_errow.png" />
+    <Content Include="images\li-border.png" />
+    <Content Include="images\li-sprator.png" />
+    <Content Include="images\li-sprator2.png" />
+    <Content Include="images\like-heart.png" />
+    <Content Include="images\link-btn.png" />
+    <Content Include="images\link-btn2.png" />
+    <Content Include="images\list_btn.png" />
+    <Content Include="images\list_btn_hover.png" />
+    <Content Include="images\location.png" />
+    <Content Include="images\location2.png" />
+    <Content Include="images\location2_hover.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\monday-bg.png" />
+    <Content Include="images\nav-bg-black.png" />
+    <Content Include="images\next-icon.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\nexthover-icon.png" />
+    <Content Include="images\prefrnce.png" />
+    <Content Include="images\prefrnce_hover.png" />
+    <Content Include="images\prev-icon.png" />
+    <Content Include="images\prevhover-icon.png" />
+    <Content Include="images\requaired-dot.png" />
+    <Content Include="images\responsive.png" />
+    <Content Include="images\restart.png" />
+    <Content Include="images\review.png" />
+    <Content Include="images\review_hover.png" />
+    <Content Include="images\right.png" />
+    <Content Include="images\right_errow.png" />
+    <Content Include="images\rss.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\search2.png" />
+    <Content Include="images\star-blue.png" />
+    <Content Include="images\star.png" />
+    <Content Include="images\summery.png" />
+    <Content Include="images\summery_hover.png" />
+    <Content Include="images\sunday-bg.png" />
+    <Content Include="images\temp.png" />
+    <Content Include="images\test-next.png" />
+    <Content Include="images\test-prev.png" />
+    <Content Include="images\testimonial-pic.png" />
+    <Content Include="images\top-arrow.png" />
+    <Content Include="images\toptrans.png" />
+    <Content Include="images\tweet-l.png" />
+    <Content Include="images\tweet-r.png" />
+    <Content Include="images\tweet.png" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\vacation.png" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\daterangepicker.js" />
+    <Content Include="js\jcarousellite_1.0.1.js" />
+    <Content Include="js\jquery-1.7.1.min.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.10.2.js" />
+    <Content Include="js\jquery.carouFredSel-6.0.4-packed.js" />
+    <Content Include="js\jquery.collapse.js" />
+    <Content Include="js\jquery.collapse_cookie_storage.js" />
+    <Content Include="js\jquery.collapse_storage.js" />
+    <Content Include="js\jquery.currency.js" />
+    <Content Include="js\jquery.cycle.all.js" />
+    <Content Include="js\jquery.elastislide.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.formatCurrency-1.4.0.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.jcarousel.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.simpleWeather-2.3.min.js" />
+    <Content Include="js\jquery.tinyscrollbar.min.js" />
+    <Content Include="js\jquery.zweatherfeed.js" />
+    <Content Include="js\jquery.zweatherfeed.min.js" />
+    <Content Include="js\localWeather.js" />
+    <Content Include="js\modernizr-1.7.min.js" />
+    <Content Include="js\modernizr.custom.79639.js" />
+    <Content Include="js\responsive-accordion.js" />
+    <Content Include="js\responsive-accordion.min.js" />
+    <Content Include="js\script_for_this_demo.js" />
+    <Content Include="obj\Debug\CarofferWebApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CarofferWebApp.dll" />
+    <Content Include="obj\Debug\CarofferWebApp.pdb" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAl\ImageMapBLL.cs" />
+    <Compile Include="BAl\Model.cs" />
+    <Compile Include="BAl\PropertyManager.cs" />
+    <Compile Include="BAl\WebServiceRepository.cs" />
+    <Compile Include="CarofferForms\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarofferForms\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarofferForms\AppraisalForm.aspx.cs">
+      <DependentUpon>AppraisalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarofferForms\AppraisalForm.aspx.designer.cs">
+      <DependentUpon>AppraisalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarofferForms\CarOffers.aspx.cs">
+      <DependentUpon>CarOffers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarofferForms\CarOffers.aspx.designer.cs">
+      <DependentUpon>CarOffers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarofferForms\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarofferForms\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarofferForms\Summary.aspx.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarofferForms\Summary.aspx.designer.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAl\DLogic.cs" />
+    <Compile Include="DAl\ImageDLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ImageMapUtilities.cs" />
+    <Compile Include="Utilities\VehicleConditionDetails.cs" />
+    <Compile Include="Utilities\VehicleDetails.cs" />
+    <Compile Include="Utilities\VehicleOptionsDetails.cs" />
+    <Compile Include="Utilities\VehicleOwnerInformation.cs" />
+    <Compile Include="Utilities\VehicleSpecifications.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\dinpro-medium_0-webfont.eot" />
+    <Content Include="fonts\dinpro-medium_0-webfont.ttf" />
+    <Content Include="fonts\dinpro-medium_0-webfont.woff" />
+    <Content Include="fonts\gotham-rounded-light-webfont.eot" />
+    <Content Include="fonts\gotham-rounded-light-webfont.ttf" />
+    <Content Include="fonts\gotham-rounded-light-webfont.woff" />
+    <Content Include="fonts\gotham-rounded-medium_0-webfont.eot" />
+    <Content Include="fonts\gotham-rounded-medium_0-webfont.ttf" />
+    <Content Include="fonts\gotham-rounded-medium_0-webfont.woff" />
+    <Content Include="fonts\proximanova-bold-webfont-webfont.eot" />
+    <Content Include="fonts\proximanova-bold-webfont-webfont.ttf" />
+    <Content Include="fonts\proximanova-bold-webfont-webfont.woff" />
+    <Content Include="fonts\proximanova-regularitalic_1-webfont.eot" />
+    <Content Include="fonts\proximanova-regularitalic_1-webfont.ttf" />
+    <Content Include="fonts\proximanova-regularitalic_1-webfont.woff" />
+    <Content Include="fonts\proximanova-regular_1-webfont.eot" />
+    <Content Include="fonts\proximanova-regular_1-webfont.ttf" />
+    <Content Include="fonts\proximanova-regular_1-webfont.woff" />
+    <Content Include="fonts\pt_serif-web-regular-webfont.eot" />
+    <Content Include="fonts\pt_serif-web-regular-webfont.ttf" />
+    <Content Include="fonts\pt_serif-web-regular-webfont.woff" />
+    <Content Include="obj\Debug\CarofferWebApp.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="bin\AjaxControlToolkitSampleSite.zip" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imagess\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62708/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
